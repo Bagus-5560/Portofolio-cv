@@ -12,3 +12,6 @@ transition: all 1s ease-out;
 opacity: 1;
 transform: translateY(0px);
 }
+html {
+  scroll-behavior: smooth
+}
