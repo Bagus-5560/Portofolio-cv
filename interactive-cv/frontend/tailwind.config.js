@@ -43,10 +43,10 @@ export default {
       },
       animation: {
         // Menambahkan animasi spinning-gradient
-        'spinning-gradient': 'spinning-gradient 4s linear infinite',
-        aurora: 'aurora 20s ease-in-out infinite',
-        'slide-in-left': 'slide-in-left 0.7s ease-out forwards',
-        'slide-in-right': 'slide-in-right 0.7s ease-out forwards',
+        'spinning-gradient': 'spinning-gradient 3s linear infinite',
+        aurora: 'aurora 12s ease-in-out infinite',
+        'slide-in-left': 'slide-in-left 0.6s ease-out forwards',
+        'slide-in-right': 'slide-in-right 0.6s ease-out forwards',
         'fade-in': 'fade-in 0.5s ease-out forwards',
       },
     },

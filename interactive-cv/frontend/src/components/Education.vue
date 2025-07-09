@@ -14,7 +14,7 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <section id="pendidikan" class="py-20 bg-white dark:bg-dark-background-light">
+  <section id="pendidikan" class="py-20 dark:text-slate-300">
     <div class="container mx-auto px-6 ">
       <SectionTitle title="Riwayat Pendidikan" />
       <div class="relative dark:text-dark-text">

@@ -4,7 +4,7 @@ import hero from '@/assets/img/hero.png';
 </script>
 <template>
 
-  <section id="profil" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center dark:bg-dark-background dark:text-dark-text">
+  <section id="profil" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center dark:text-slate-300">
 
     <div class="md:w-1/2 mb-10 md:mb-0">
 
