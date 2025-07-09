@@ -4,8 +4,7 @@ import hero from '@/assets/img/hero.png';
 </script>
 <template>
 
-  <section id="profil" class="container mx-auto px-6 py-20 flex flex-
-col md:flex-row items-center">
+  <section id="profil" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center dark:bg-dark-background dark:text-dark-text">
 
     <div class="md:w-1/2 mb-10 md:mb-0">
 
@@ -13,7 +12,7 @@ col md:flex-row items-center">
 
         Halo, Saya <span class="text-blue-600">Bagus Putra Wiratama</span>
       </h1>
-      <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms;">
+      <p class="text-xl dark:text-white mb-8 animate-slide-in-left" style="animation-delay: 400ms;">
         Mahasiswa Teknik Informatika yang bersemangat dalam
         pengembangan web dan desain antarmuka.
       </p>
