@@ -26,7 +26,7 @@ onMounted(async () => {
     <div class="container mx-auto px-6">
       <SectionTitle title="Proyek Unggulan" />
 
-      <div v-if="loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div v-if="loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div v-for="n in 3" :key="n" class="bg-white dark:bg-slate-800 rounded-lg shadow-md dark:border dark:border-slate-700 overflow-hidden">
           <div class="w-full h-48 bg-gray-300 dark:bg-slate-700 animate-pulse"></div>
           <div class="p-6">
@@ -45,7 +45,7 @@ onMounted(async () => {
         <p>{{ error }}</p>
       </div>
 
-      <div v-else-if="projects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div v-else-if="projects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <a
           v-for="project in projects"
           :key="project.title"
