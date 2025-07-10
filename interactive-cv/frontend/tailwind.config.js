@@ -57,6 +57,10 @@ export default {
           '0%, 100%': { opacity: '0.2' },
           '50%': { opacity: '1' },
         },
+        'star-twinkle': {
+          '0%, 100%': { opacity: '0.2' },
+          '50%': { opacity: '1' },
+        },
         meteor: {
           '0%': {
             transform: 'translateX(0) translateY(0) rotate(45deg)',
@@ -82,8 +86,9 @@ export default {
         'pulse-scale': 'pulse-scale 4s ease-in-out infinite',
         'grid-shimmer': 'grid-shimmer 15s linear infinite',
         'twinkle': 'twinkle 3s ease-in-out infinite',
-        meteor: 'meteor linear infinite',
-        'galaxy-shift': 'galaxy-shift 60s linear infinite',
+        'star-twinkle': 'star-twinkle 3s ease-in-out infinite',
+        meteor: 'meteor 1.5s linear infinite',
+        'galaxy-shift': 'galaxy-shift 10s linear infinite',
       },
     },
   },
