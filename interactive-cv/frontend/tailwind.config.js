@@ -75,6 +75,9 @@ export default {
           '0%': { backgroundPosition: '0% 0%' },
           '100%': { backgroundPosition: '100% 100%' },
         },
+        colors: {
+          'dark-glass-bg': 'rgba(22, 27, 34, 0.4)',
+        },
       },
       animation: {
         'spinning-gradient': 'spinning-gradient 3s linear infinite',
