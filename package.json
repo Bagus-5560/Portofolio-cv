@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.3"
   }
 }
