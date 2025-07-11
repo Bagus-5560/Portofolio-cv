@@ -3,6 +3,7 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
     "vitepress": "^1.6.3"
   }
 }
