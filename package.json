@@ -5,7 +5,9 @@
     "backend"
   ],
   "scripts": {
-    "build": "npm run build --workspace=interactive-cv/frontend"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
