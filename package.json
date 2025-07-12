@@ -1,9 +1,17 @@
 {
-  "devDependencies": {
-    "prettier": "^3.6.2"
+  "private": true,
+  "workspaces": [
+    "interactive-cv/frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=interactive-cv/frontend"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
     "vitepress": "^1.6.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
