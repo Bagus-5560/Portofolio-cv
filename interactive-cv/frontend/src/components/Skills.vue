@@ -10,7 +10,7 @@ const error = ref(null);
 
 onMounted(async () => {
   try {
-    const response = await axios.get('/api/skills');
+    const response = await axios.get('/skills.json');
     skills.value = response.data;
   } catch (err) {
     console.error('Gagal mengambil data skills:', err);
