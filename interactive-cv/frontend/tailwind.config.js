@@ -82,6 +82,11 @@ export default {
           '0%': { transform: 'translateY(0)', opacity: '0.8' },
           '100%': { transform: 'translateY(100vh)', opacity: '0.2' },
         },
+        'aurora': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
 
       },
       animation: {
@@ -98,6 +103,7 @@ export default {
         meteor: 'meteor 1.5s linear infinite',
         'galaxy-shift': 'galaxy-shift 10s linear infinite',
         'fall-snow': 'fall-snow linear infinite',
+        'aurora': 'aurora 15s ease-in-out infinite',
       },
     },
   },

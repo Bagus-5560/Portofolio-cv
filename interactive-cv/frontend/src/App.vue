@@ -122,23 +122,25 @@ onMounted(() => {
 
     <div class="fixed inset-0 -z-20 bg-gray-100 dark:bg-dark-background overflow-hidden">
       <!-- ❄️ LIGHT MODE (Aurora + Salju) -->
-      <div
-        class="block dark:hidden absolute inset-0 -z-10 bg-gradient-to-b from-blue-100 via-blue-300 to-indigo-600 overflow-hidden">
-        <!-- Aurora -->
+      <div class="block dark:hidden absolute inset-0 -z-10 overflow-hidden">
+        <!-- Background malam -->
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-200 via-blue-300 to-indigo-700" />
+
+        <!-- Aurora effect -->
         <div
-          class="absolute inset-0 bg-[radial-gradient(circle_at_top,_#a7f3d0,_transparent_60%)] opacity-30 mix-blend-screen animate-aurora" />
+          class="absolute inset-0 mix-blend-screen animate-aurora bg-[radial-gradient(circle_at_top_left,_#a5f3fc_10%,_transparent_70%),_radial-gradient(circle_at_top_right,_#c084fc_10%,_transparent_70%),_radial-gradient(circle_at_center,_#facc15_10%,_transparent_70%)] bg-[length:200%_200%] opacity-30" />
 
         <!-- Salju -->
         <template v-for="i in 80" :key="'snow-' + i">
-          <div class="absolute w-[4px] h-[4px] bg-white rounded-full opacity-70 animate-fall-snow" :style="{
-            top: Math.random() * 100 + '%',
-            left: Math.random() * 100 + '%',
-            animationDelay: Math.random() * 5 + 's',
-            animationDuration: 5 + Math.random() * 5 + 's',
-          }" />
+          <div class="absolute w-[4px] h-[4px] bg-white rounded-full opacity-70 animate-fall-snow pointer-events-none"
+            :style="{
+              top: Math.random() * 100 + '%',
+              left: Math.random() * 100 + '%',
+              animationDelay: Math.random() * 5 + 's',
+              animationDuration: 5 + Math.random() * 5 + 's',
+            }" />
         </template>
       </div>
-
 
       <div class="hidden dark:block">
         <!-- Galaxy background -->
