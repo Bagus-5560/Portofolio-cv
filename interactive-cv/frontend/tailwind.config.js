@@ -78,6 +78,11 @@ export default {
         colors: {
           'dark-glass-bg': 'rgba(22, 27, 34, 0.4)',
         },
+        'fall-snow': {
+          '0%': { transform: 'translateY(0)', opacity: '0.8' },
+          '100%': { transform: 'translateY(100vh)', opacity: '0.2' },
+        },
+
       },
       animation: {
         'spinning-gradient': 'spinning-gradient 3s linear infinite',
@@ -92,6 +97,7 @@ export default {
         'star-twinkle': 'star-twinkle 3s ease-in-out infinite',
         meteor: 'meteor 1.5s linear infinite',
         'galaxy-shift': 'galaxy-shift 10s linear infinite',
+        'fall-snow': 'fall-snow linear infinite',
       },
     },
   },
