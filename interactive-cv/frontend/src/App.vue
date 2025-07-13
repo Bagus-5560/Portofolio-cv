@@ -123,7 +123,7 @@ onMounted(() => {
     <div class="fixed inset-0 -z-20 bg-gray-100 dark:bg-dark-background overflow-hidden">
       <!-- ❄️ LIGHT MODE (Aurora + Salju) -->
       <div
-        class="block dark:hidden absolute inset-0 -z-20 bg-gradient-to-b from-blue-100 via-blue-300 to-indigo-600 overflow-hidden">
+        class="block dark:hidden absolute inset-0 -z-10 bg-gradient-to-b from-blue-100 via-blue-300 to-indigo-600 overflow-hidden">
         <!-- Aurora -->
         <div
           class="absolute inset-0 bg-[radial-gradient(circle_at_top,_#a7f3d0,_transparent_60%)] opacity-30 mix-blend-screen animate-aurora" />
@@ -138,6 +138,7 @@ onMounted(() => {
           }" />
         </template>
       </div>
+
 
       <div class="hidden dark:block">
         <!-- Galaxy background -->
