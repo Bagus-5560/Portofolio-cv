@@ -39,7 +39,7 @@ onMounted(async () => {
         class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         <div v-for="skill in skills" :key="skill.name"
           class="p-6 rounded-xl border border-slate-700/40 bg-white/5 dark:bg-dark-glass-bg backdrop-blur-md text-center shadow transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_0_12px_#58A6FF] hover:border-dark-primary">
-          <h3 class="text-lg font-bold text-white tracking-wide">{{ skill.name }}</h3>
+          <h3 class="text-lg font-bold text-black tracking-wide">{{ skill.name }}</h3>
           <p class="text-sm text-slate-400 mt-1 uppercase tracking-wider">{{ skill.level }}</p>
         </div>
 
