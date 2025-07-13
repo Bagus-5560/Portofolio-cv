@@ -172,9 +172,9 @@ onMounted(() => {
           filter: p.blur ? 'blur(2px)' : 'blur(0.3px)',
         }" />
       </template>
-    </div>
-  </div>
 
-  <RouterView />
+    </div>
+
+    <RouterView />
   </div>
 </template>
