@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref, onBeforeUnmount } from 'vue'
+import Snow from './components/Snow.vue'
 
 function randomRange(min, max) {
   return Math.random() * (max - min) + min
@@ -114,27 +115,6 @@ onMounted(() => {
 </script>
 
 <template>
-
-  <!-- SALJU + AURORA light mode -->
-  <div class="fixed inset-0 -z-30 overflow-hidden dark:hidden pointer-events-none">
-    <!-- 🌌 Background aurora -->
-    <div class="absolute inset-0 bg-gradient-to-b from-blue-100 via-sky-200 to-indigo-400" />
-
-    <!-- 🌈 Aurora Animation -->
-    <div
-      class="absolute inset-0 opacity-30 animate-aurora mix-blend-screen bg-[radial-gradient(circle_at_top_left,_#a5f3fc,_transparent_70%),_radial-gradient(circle_at_top_right,_#c084fc,_transparent_70%),_radial-gradient(circle_at_center,_#facc15,_transparent_70%)] bg-[length:200%_200%]" />
-
-    <!-- ❄️ Salju -->
-    <template v-for="i in 80" :key="'snow-' + i">
-      <div class="absolute w-[4px] h-[4px] bg-white rounded-full opacity-70 animate-fall-snow" :style="{
-        top: Math.random() * 100 + '%',
-        left: Math.random() * 100 + '%',
-        animationDelay: Math.random() * 5 + 's',
-        animationDuration: (5 + Math.random() * 5) + 's',
-      }" />
-    </template>
-  </div>
-
   <div class="relative font-sans dark:text-dark-text text-gray-800">
     <!-- Glow -->
     <div
@@ -142,56 +122,59 @@ onMounted(() => {
       :style="{ top: glow.y + 'px', left: glow.x + 'px', transform: 'translate(-50%, -50%)' }" />
 
     <div class="fixed inset-0 -z-20 bg-gray-100 dark:bg-dark-background overflow-hidden">
-      <div class="hidden dark:block">
-        <!-- Galaxy background -->
-        <div
-          class="absolute inset-0 opacity-20 animate-galaxy-shift bg-[radial-gradient(circle,_#0a0f21,_#0d1117,rgba(13,17,23,0))]" />
+      <Snow class="dark:hidden" />
+      <div
+        class="absolute inset-0 animate-aurora dark:hidden opacity-80
+               bg-[radial-gradient(at_50%_30%,_rgba(144,238,255,0.3),_transparent),_radial-gradient(at_30%_70%,_rgba(100,255,200,0.2),_transparent),_radial-gradient(at_70%_80%,_rgba(255,200,255,0.25),_transparent)]" />
+      <!-- Galaxy background -->
+      <div
+        class="absolute inset-0 opacity-20 animate-galaxy-shift bg-[radial-gradient(circle,_#0a0f21,_#0d1117,rgba(13,17,23,0))]" />
 
-        <!-- Stars -->
-        <template v-for="(star, i) in stars" :key="'star-' + i">
-          <div class="absolute rounded-full bg-dark-primary animate-star-twinkle"
-            :class="star.size === 2 ? 'w-[2px] h-[2px]' : 'w-[1px] h-[1px]'" :style="{
-              top: star.top + '%',
-              left: star.left + '%',
-              animationDelay: star.delay + 's'
-            }" />
-        </template>
-
-        <!-- Background meteors -->
-        <template v-for="(m, idx) in meteors" :key="'meteor-' + idx">
-          <span class="absolute bg-white rounded-full w-[2px] h-[2px] animate-meteor" :style="{
-            top: m.top,
-            left: m.left,
-            animationDelay: m.delay,
-            animationDuration: m.duration,
+      <!-- Stars -->
+      <template v-for="(star, i) in stars" :key="'star-' + i">
+        <div class="absolute rounded-full bg-dark-primary animate-star-twinkle"
+          :class="star.size === 2 ? 'w-[2px] h-[2px]' : 'w-[1px] h-[1px]'" :style="{
+            top: star.top + '%',
+            left: star.left + '%',
+            animationDelay: star.delay + 's'
           }" />
-        </template>
+      </template>
 
-        <!-- Click-triggered meteors -->
-        <template v-for="m in clickMeteors" :key="m.id">
-          <span class="absolute bg-white w-[2px] h-[2px] rounded-full animate-meteor" :style="{
-            top: m.y + 'px',
-            left: m.x + 'px',
-            animationDuration: '1.5s',
-          }" />
-        </template>
+      <!-- Background meteors -->
+      <template v-for="(m, idx) in meteors" :key="'meteor-' + idx">
+        <span class="absolute bg-white rounded-full w-[2px] h-[2px] animate-meteor" :style="{
+          top: m.top,
+          left: m.left,
+          animationDelay: m.delay,
+          animationDuration: m.duration,
+        }" />
+      </template>
 
-        <!-- Particles (mouse trail + meteor from click) -->
-        <template v-for="p in particles" :key="p.id">
-          <div class="absolute rounded-full pointer-events-none transition-all duration-500 ease-out" :style="{
-            width: p.size,
-            height: p.size,
-            background: p.color,
-            top: p.yStart + 'px',
-            left: p.xStart + 'px',
-            transform: `translate(${p.xEnd - p.xStart}px, ${p.yEnd - p.yStart}px)`,
-            opacity: p.opacity,
-            filter: p.blur ? 'blur(2px)' : 'blur(0.3px)',
-          }" />
-        </template>
-      </div>
+      <!-- Click-triggered meteors -->
+      <template v-for="m in clickMeteors" :key="m.id">
+        <span class="absolute bg-white w-[2px] h-[2px] rounded-full animate-meteor" :style="{
+          top: m.y + 'px',
+          left: m.x + 'px',
+          animationDuration: '1.5s',
+        }" />
+      </template>
+
+      <!-- Particles (mouse trail + meteor from click) -->
+      <template v-for="p in particles" :key="p.id">
+        <div class="absolute rounded-full pointer-events-none transition-all duration-500 ease-out" :style="{
+          width: p.size,
+          height: p.size,
+          background: p.color,
+          top: p.yStart + 'px',
+          left: p.xStart + 'px',
+          transform: `translate(${p.xEnd - p.xStart}px, ${p.yEnd - p.yStart}px)`,
+          opacity: p.opacity,
+          filter: p.blur ? 'blur(2px)' : 'blur(0.3px)',
+        }" />
+      </template>
     </div>
+  </div>
 
-    <RouterView />
+  <RouterView />
   </div>
 </template>
