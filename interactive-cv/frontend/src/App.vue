@@ -126,13 +126,13 @@ onMounted(() => {
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
-      <!-- 🌌 Aurora Hijau Telur Bebek -->
-      <!-- 🌌 Aurora Hijau Telur Bebek -->
-      <div class="absolute inset-0 dark:hidden opacity-100 animate-aurora
-     bg-[radial-gradient(at_50%_30%,_rgba(0,180,120,0.5),_transparent),
-         radial-gradient(at_30%_70%,_rgba(0,160,100,0.5),_transparent),
-         radial-gradient(at_70%_80%,_rgba(0,140,80,0.5),_transparent)]
-     bg-[length:400%_400%] z-0" />
+      <!-- Aurora hijau terang menyala -->
+      <div class="absolute inset-0 dark:hidden animate-aurora opacity-80 z-10
+  bg-[radial-gradient(ellipse_at_top,_rgba(0,255,160,0.35)_0%,_transparent_70%),
+      radial-gradient(ellipse_at_top_left,_rgba(0,220,120,0.3)_0%,_transparent_60%),
+      radial-gradient(ellipse_at_top_right,_rgba(0,200,100,0.25)_0%,_transparent_65%)]
+  bg-[length:400%_400%]" />
+
 
 
       <!-- Galaxy background -->

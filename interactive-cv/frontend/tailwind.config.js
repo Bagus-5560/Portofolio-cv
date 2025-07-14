@@ -83,11 +83,9 @@ export default {
           '100%': { transform: 'translateY(100vh)', opacity: '0.2' },
         },
         'aurora': {
-          '0%': { backgroundPosition: '0% 50%, 50% 100%, 100% 50%' },
-          '25%': { backgroundPosition: '25% 0%, 75% 50%, 125% 0%' },
-          '50%': { backgroundPosition: '50% 100%, 100% 0%, 50% 100%' },
-          '75%': { backgroundPosition: '75% 50%, 125% 100%, 25% 50%' },
-          '100%': { backgroundPosition: '0% 50%, 50% 100%, 100% 50%' },
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
         },
 
       },
@@ -105,7 +103,7 @@ export default {
         meteor: 'meteor 1.5s linear infinite',
         'galaxy-shift': 'galaxy-shift 10s linear infinite',
         'fall-snow': 'fall-snow linear infinite',
-        'aurora': 'aurora 15s ease-in-out infinite',
+        'aurora': 'aurora 20s ease-in-out infinite',
       },
     },
   },
