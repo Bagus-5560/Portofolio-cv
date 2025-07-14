@@ -127,11 +127,13 @@ onMounted(() => {
       <Snow class="hidden dark:block" />
 
       <!-- 🌌 Aurora Hijau Telur Bebek -->
-      <div class="absolute inset-0 dark:hidden opacity-100 animate-aurora mix-blend-screen
-               bg-[radial-gradient(at_50%_30%,_rgba(72,255,195,0.55),_transparent),
-                   radial-gradient(at_30%_70%,_rgba(36,232,156,0.5),_transparent),
-                   radial-gradient(at_70%_80%,_rgba(0,185,120,0.45),_transparent)]
-               bg-[length:400%_400%]" />
+      <!-- 🌌 Aurora Hijau Telur Bebek -->
+      <div class="absolute inset-0 dark:hidden opacity-100 animate-aurora
+     bg-[radial-gradient(at_50%_30%,_rgba(0,180,120,0.5),_transparent),
+         radial-gradient(at_30%_70%,_rgba(0,160,100,0.5),_transparent),
+         radial-gradient(at_70%_80%,_rgba(0,140,80,0.5),_transparent)]
+     bg-[length:400%_400%] z-0" />
+
 
       <!-- Galaxy background -->
       <div
