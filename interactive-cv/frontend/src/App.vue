@@ -124,8 +124,9 @@ onMounted(() => {
     <div class="fixed inset-0 -z-20 bg-gray-100 dark:bg-dark-background overflow-hidden">
       <Snow class="hidden dark:block" />
       <div
-        class="absolute inset-0 animate-aurora dark:hidden opacity-80
-               bg-[radial-gradient(at_50%_30%,_rgba(144,238,255,0.3),_transparent),_radial-gradient(at_30%_70%,_rgba(100,255,200,0.2),_transparent),_radial-gradient(at_70%_80%,_rgba(255,200,255,0.25),_transparent)]" />
+        class="absolute inset-0 dark:hidden opacity-80 animate-aurora
+         bg-[radial-gradient(at_50%_30%,_rgba(144,238,255,0.3),_transparent),_radial-gradient(at_30%_70%,_rgba(100,255,200,0.2),_transparent),_radial-gradient(at_70%_80%,_rgba(255,200,255,0.25),_transparent)] bg-[length:400%_400%]" />
+
       <!-- Galaxy background -->
       <div
         class="absolute inset-0 opacity-20 animate-galaxy-shift bg-[radial-gradient(circle,_#0a0f21,_#0d1117,rgba(13,17,23,0))]" />
