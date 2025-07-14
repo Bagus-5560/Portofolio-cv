@@ -56,8 +56,8 @@ onMounted(async () => {
         >
           <div class="overflow-hidden">
             <img
-              :src="getImageUrl(project.image)"
-              :alt="`Gambar Proyek + {project.title}`"
+              :src="project.image"
+              :alt="`Gambar Proyek ${project.title}`"
               class="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-105"
             />
           </div>
