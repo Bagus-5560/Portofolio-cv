@@ -8,6 +8,11 @@ const projects = ref([]);
 const loading = ref(true);
 const error = ref(null);
 
+const getImageUrl = (imageName) => {
+  // Fungsi ini memberitahu Vite cara menemukan gambar di dalam /src/assets
+  return new URL(`./assets/img/${imageName}`, import.meta.url).href;
+};
+
 onMounted(async () => {
   try {
     const response = await axios.get('/api/projects');
@@ -56,7 +61,7 @@ onMounted(async () => {
         >
           <div class="overflow-hidden">
             <img
-              :src="project.image"
+              :src="getImageUrl(project.image)"
               :alt="`Gambar Proyek ${project.title}`"
               class="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-105"
             />
