@@ -121,11 +121,12 @@ onMounted(() => {
       class="pointer-events-none fixed w-32 h-32 bg-blue-500 opacity-10 blur-3xl rounded-full -z-10 transition-transform duration-300"
       :style="{ top: glow.y + 'px', left: glow.x + 'px', transform: 'translate(-50%, -50%)' }" />
 
-    <div class="fixed inset-0 -z-20 bg-gray-100 dark:bg-dark-background overflow-hidden">
+    <div class="fixed inset-0 -z-20 bg-[#93c7ff] dark:bg-dark-background overflow-hidden">
       <Snow class="hidden dark:block" />
-      <div
-        class="absolute inset-0 dark:hidden opacity-80 animate-aurora mix-blend-screen
-         bg-[radial-gradient(at_50%_30%,_rgba(0,255,128,0.25),_transparent),_radial-gradient(at_30%_70%,_rgba(0,200,255,0.2),_transparent),_radial-gradient(at_70%_80%,_rgba(140,0,255,0.2),_transparent)] bg-[length:400%_400%]" />
+      <div class="absolute inset-0 dark:hidden opacity-90 animate-aurora mix-blend-multiply
+         bg-[radial-gradient(at_50%_30%,_rgba(108, 200, 180, 0.5),_transparent),_radial-gradient(at_30%_70%,_rgba(70, 190, 160, 0.4),_transparent),_radial-gradient(at_70%_80%,_rgba(40, 160, 130, 0.35),_transparent)]
+         bg-[length:400%_400%]" />
+
 
       <!-- Galaxy background -->
       <div
