@@ -127,11 +127,12 @@ onMounted(() => {
       <Snow class="hidden dark:block" />
 
       <!-- Aurora hijau terang menyala -->
-      <div class="absolute inset-0 dark:hidden animate-aurora opacity-80 z-10
-  bg-[radial-gradient(ellipse_at_top,_rgba(0,255,160,0.35)_0%,_transparent_70%),
-      radial-gradient(ellipse_at_top_left,_rgba(0,220,120,0.3)_0%,_transparent_60%),
-      radial-gradient(ellipse_at_top_right,_rgba(0,200,100,0.25)_0%,_transparent_65%)]
-  bg-[length:400%_400%]" />
+      <div class="absolute inset-0 dark:hidden animate-aurora z-10 opacity-90 mix-blend-overlay
+  bg-[radial-gradient(ellipse_at_top,_rgba(0,255,180,0.65)_0%,_transparent_70%),
+      radial-gradient(ellipse_at_top_left,_rgba(0,230,140,0.6)_0%,_transparent_60%),
+      radial-gradient(ellipse_at_top_right,_rgba(0,200,110,0.5)_0%,_transparent_65%)]
+  bg-[length:300%_300%]" />
+
 
 
 
