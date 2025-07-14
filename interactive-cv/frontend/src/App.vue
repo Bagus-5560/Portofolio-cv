@@ -122,7 +122,7 @@ onMounted(() => {
       :style="{ top: glow.y + 'px', left: glow.x + 'px', transform: 'translate(-50%, -50%)' }" />
 
     <!-- Background dan efek -->
-    <div class="fixed inset-0 -z-20 bg-[#bde2ff] dark:bg-dark-background overflow-hidden">
+    <div class="fixed inset-0 -z-20 bg-[#e0f2ff] dark:bg-dark-background overflow-hidden">
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
