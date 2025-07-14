@@ -121,12 +121,17 @@ onMounted(() => {
       class="pointer-events-none fixed w-32 h-32 bg-blue-500 opacity-10 blur-3xl rounded-full -z-10 transition-transform duration-300"
       :style="{ top: glow.y + 'px', left: glow.x + 'px', transform: 'translate(-50%, -50%)' }" />
 
-    <div class="fixed inset-0 -z-20 bg-[#93c7ff] dark:bg-dark-background overflow-hidden">
+    <!-- Background dan efek -->
+    <div class="fixed inset-0 -z-20 bg-[#bde2ff] dark:bg-dark-background overflow-hidden">
+      <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
-      <div class="absolute inset-0 dark:hidden opacity-90 animate-aurora mix-blend-multiply
-         bg-[radial-gradient(at_50%_30%,_rgba(108, 200, 180, 0.5),_transparent),_radial-gradient(at_30%_70%,_rgba(70, 190, 160, 0.4),_transparent),_radial-gradient(at_70%_80%,_rgba(40, 160, 130, 0.35),_transparent)]
-         bg-[length:400%_400%]" />
 
+      <!-- 🌌 Aurora Hijau Telur Bebek -->
+      <div class="absolute inset-0 dark:hidden opacity-100 animate-aurora mix-blend-screen
+               bg-[radial-gradient(at_50%_30%,_rgba(72,255,195,0.55),_transparent),
+                   radial-gradient(at_30%_70%,_rgba(36,232,156,0.5),_transparent),
+                   radial-gradient(at_70%_80%,_rgba(0,185,120,0.45),_transparent)]
+               bg-[length:400%_400%]" />
 
       <!-- Galaxy background -->
       <div
