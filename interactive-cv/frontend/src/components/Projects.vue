@@ -9,8 +9,7 @@ const loading = ref(true);
 const error = ref(null);
 
 const getImageUrl = (imageName) => {
-  // Fungsi ini memberitahu Vite cara menemukan gambar di dalam /src/assets
-  return new URL(`./assets/img/${imageName}`, import.meta.url).href;
+  return new URL(`../assets/img/${imageName}`, import.meta.url).href;
 };
 
 onMounted(async () => {
