@@ -187,6 +187,6 @@ onMounted(() => {
 
 <style>
 .wavy-triangle-background {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='p' width='40' height='40' patternUnits='userSpaceOnUse'%3e%3cpath d='M 0 10 L 40 10 M 10 0 L 10 40 M 0 30 L 40 30 M 30 0 L 30 40' stroke='%23dbeafe' stroke-width='1'/%3e%3c/pattern%3e%3cfilter id='f'%3e%3cfeTurbulence type='fractalNoise' baseFrequency='0.01 0.02' numOctaves='1' result='t'%3e%3canimate attributeName='baseFrequency' dur='20s' values='0.01 0.02;0.02 0.03;0.01 0.02' repeatCount='indefinite'/%3e%3c/feTurbulence%3e%3cfeDisplacementMap in='SourceGraphic' in2='t' scale='8'/%3e%3c/filter%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23p)' filter='url(%23f)'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='p' width='40' height='40' patternUnits='userSpaceOnUse'%3e%3cpath d='M 20 0 V 40 M 0 20 H 40 M 0 0 L 40 40 M 0 40 L 40 0' stroke='%235df542' stroke-width='1'/%3e%3c/pattern%3e%3cfilter id='f'%3e%3cfeTurbulence type='fractalNoise' baseFrequency='0.01 0.02' numOctaves='1' result='t'%3e%3canimate attributeName='baseFrequency' dur='20s' values='0.01 0.02;0.02 0.03;0.01 0.02' repeatCount='indefinite'/%3e%3c/feTurbulence%3e%3cfeDisplacementMap in='SourceGraphic' in2='t' scale='8'/%3e%3c/filter%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23p)' filter='url(%23f)'/%3e%3c/svg%3e");
 }
 </style>
