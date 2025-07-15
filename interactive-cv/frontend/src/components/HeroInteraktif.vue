@@ -30,15 +30,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <!-- PERUBAHAN KRITIS: Diubah menjadi background layer, bukan halaman -->
-  <div class="fixed inset-0 -z-10">
-    <!-- LAPISAN 1: EFEK BACKGROUND (DOT GRID & SPOTLIGHT) -->
+  <div class="relative w-full h-screen overflow-hidden bg-slate-900">
     <div class="absolute inset-0 z-0">
-      <!-- Pola Titik -->
       <div
         class="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.slate.800)_1px,transparent_1px)] bg-[size:24px_24px]"
       />
-      <!-- Senter Interaktif -->
       <div
         class="pointer-events-none fixed inset-0 transition-all duration-300"
         :style="{
@@ -47,13 +43,11 @@ onBeforeUnmount(() => {
       />
     </div>
 
-    <!-- LAPISAN 2: CANVAS 3D -->
     <TresCanvas class="z-10">
       <TresPerspectiveCamera :position="[0, 1, 6]" />
       <TresAmbientLight :intensity="1" />
       <TresDirectionalLight :position="[0, 2, 4]" :intensity="2" color="#A855F7" />
 
-      <!-- Objek 3D utama -->
       <TresMesh ref="torusRef" :position="[0, 0.5, 0]">
         <TresTorusKnotGeometry :args="[1, 0.35, 128, 16]" />
         <TresMeshStandardMaterial
@@ -64,6 +58,5 @@ onBeforeUnmount(() => {
       </TresMesh>
     </TresCanvas>
 
-    <!-- PERUBAHAN KRITIS: Teks UI dihapus dari sini -->
   </div>
 </template>
