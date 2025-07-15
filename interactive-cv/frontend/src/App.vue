@@ -122,16 +122,17 @@ onMounted(() => {
       :style="{ top: glow.y + 'px', left: glow.x + 'px', transform: 'translate(-50%, -50%)' }" />
 
     <!-- Background dan efek -->
-    <div class="fixed inset-0 -z-20 bg-[#e0f2ff] dark:bg-dark-background overflow-hidden">
+    <div class="fixed inset-0 -z-20 bg-[#ffffff] dark:bg-dark-background overflow-hidden">
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
       <div class="absolute inset-0 z-0
-         bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22 viewBox=%220 0 120 120%22><polygon points=%2260,0 120,60 60,120 0,60%22 fill=%22%23d9e6ff%22 /><polygon points=%2260,0 120,60 60,60%22 fill=%22%23b6ccf5%22 /><polygon points=%2260,60 120,60 60,120%22 fill=%22%239dbbe0%22 /></svg>')]
-         bg-repeat bg-[length:60px_60px]
-         animate-geo-shift
-         opacity-30 dark:opacity-0">
+  bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHBvbHlnb24gcG9pbnRzPSI2MCwwIDEyMCw2MCA2MCwxMjAgMCw2MCIgZmlsbD0iI2Q5ZTZmZiIvPjxwb2x5Z29uIHBvaW50cz0iNjAsMCAxMjAsNjAgNjAsNjAiIGZpbGw9IiNiNmNjZjUiLz48cG9seWdvbiBwb2ludHM9IjYwLDYwIDEyMCw2MCA2MCwxMjAiIGZpbGw9IiM5ZGJiZTAiLz48L3N2Zz4=')]
+  bg-repeat bg-[length:60px_60px]
+  animate-geo-shift
+  opacity-30 dark:opacity-0 hidden dark:block">
       </div>
+
 
       <!-- Galaxy background -->
       <div
