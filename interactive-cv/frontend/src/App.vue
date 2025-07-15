@@ -127,10 +127,10 @@ onMounted(() => {
     <!-- Background dan efek -->
     <div class="fixed inset-0 -z-20 bg-[#ffffff] dark:bg-dark-background overflow-hidden">
       <!-- ❄️ Salju khusus mode terang -->
-      <Snow class="overflow-hidden" />
+      <Snow class="dark:hidden" />
       <HeroInteraktif class="hidden dark:block" />
 
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#e0e7ff_1px,transparent_1px),linear-gradient(to_bottom,#e0e7ff_1px,transparent_1px)] bg-[size:2.5rem_2.5rem] overflow-hidden">
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#e0e7ff_1px,transparent_1px),linear-gradient(to_bottom,#e0e7ff_1px,transparent_1px)] bg-[size:2.5rem_2.5rem] dark:hidden">
       </div>
 
       <!-- Galaxy background -->
