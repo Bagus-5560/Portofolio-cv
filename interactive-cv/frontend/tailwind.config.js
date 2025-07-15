@@ -82,9 +82,9 @@ export default {
           '0%': { transform: 'translateY(0)', opacity: '0.8' },
           '100%': { transform: 'translateY(100vh)', opacity: '0.2' },
         },
-        'grid-move': {
+        'iso-move': {
           '0%': { backgroundPosition: '0% 0%' },
-          '100%': { backgroundPosition: '-50px -50px' },
+          '100%': { backgroundPosition: '200px 200px' },
         },
       },
       animation: {
@@ -101,7 +101,7 @@ export default {
         meteor: 'meteor 1.5s linear infinite',
         'galaxy-shift': 'galaxy-shift 10s linear infinite',
         'fall-snow': 'fall-snow linear infinite',
-        'grid-move': 'grid-move 15s linear infinite',
+        'iso-move': 'iso-move 50s linear infinite',
       },
     },
   },
