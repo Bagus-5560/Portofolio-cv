@@ -126,8 +126,9 @@ onMounted(() => {
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
-<div class="absolute inset-0 z-0 bg-gradient-to-br from-gray-50 to-blue-100 dark:opacity-0 block dark:hidden"></div>
-
+      <div
+        class="absolute inset-0 z-0 bg-gray-100 bg-[linear-gradient(to_right,#dbeafe_1px,transparent_1px),linear-gradient(to_bottom,#dbeafe_1px,transparent_1px)] bg-[size:50px_50px] animate-grid-move dark:opacity-0 block dark:hidden">
+      </div>
 
       <!-- Galaxy background -->
       <div

@@ -82,11 +82,10 @@ export default {
           '0%': { transform: 'translateY(0)', opacity: '0.8' },
           '100%': { transform: 'translateY(100vh)', opacity: '0.2' },
         },
-        'geo-shift': {
+        'grid-move': {
           '0%': { backgroundPosition: '0% 0%' },
-          '100%': { backgroundPosition: '100% 100%' },
+          '100%': { backgroundPosition: '-50px -50px' },
         },
-
       },
       animation: {
         'spinning-gradient': 'spinning-gradient 3s linear infinite',
@@ -102,7 +101,7 @@ export default {
         meteor: 'meteor 1.5s linear infinite',
         'galaxy-shift': 'galaxy-shift 10s linear infinite',
         'fall-snow': 'fall-snow linear infinite',
-        'geo-shift': 'geo-shift 20s linear infinite',
+        'grid-move': 'grid-move 15s linear infinite',
       },
     },
   },
