@@ -126,8 +126,7 @@ onMounted(() => {
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
-      <div class="absolute inset-0 z-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJnIiBjeD0iNTAiIGN5PSI1MCIgcj0iNTAlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2ZWYzZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYzc5ZDgiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTAsMEw2MCwzMEw5MCw0MEw2MCw1MEw1MCw4MEw0MCw1MEwxMCw0MEw0MCwzMEw1MCwwWiIgZmlsbD0idXJsKCNnKSIvPjwvc3ZnPg==')] bg-repeat bg-[length:120px_120px] animate-geo-shift opacity-60 dark:opacity-0 block dark:hidden">
-      </div>
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-gray-50 to-blue-100 dark:opacity-0 block dark:hidden"></div>
 
 
       <!-- Galaxy background -->
