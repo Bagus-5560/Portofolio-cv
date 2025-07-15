@@ -30,11 +30,15 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="relative w-full h-screen overflow-hidden bg-slate-900">
+  <!-- PERUBAHAN KRITIS: Diubah menjadi background layer, bukan halaman -->
+  <div class="fixed inset-0 -z-10">
+    <!-- LAPISAN 1: EFEK BACKGROUND (DOT GRID & SPOTLIGHT) -->
     <div class="absolute inset-0 z-0">
+      <!-- Pola Titik -->
       <div
         class="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.slate.800)_1px,transparent_1px)] bg-[size:24px_24px]"
       />
+      <!-- Senter Interaktif -->
       <div
         class="pointer-events-none fixed inset-0 transition-all duration-300"
         :style="{
@@ -43,11 +47,13 @@ onBeforeUnmount(() => {
       />
     </div>
 
+    <!-- LAPISAN 2: CANVAS 3D -->
     <TresCanvas class="z-10">
       <TresPerspectiveCamera :position="[0, 1, 6]" />
       <TresAmbientLight :intensity="1" />
       <TresDirectionalLight :position="[0, 2, 4]" :intensity="2" color="#A855F7" />
 
+      <!-- Objek 3D utama -->
       <TresMesh ref="torusRef" :position="[0, 0.5, 0]">
         <TresTorusKnotGeometry :args="[1, 0.35, 128, 16]" />
         <TresMeshStandardMaterial
@@ -58,11 +64,6 @@ onBeforeUnmount(() => {
       </TresMesh>
     </TresCanvas>
 
-    <div class="absolute top-0 left-0 z-20 flex flex-col items-center justify-center w-full h-full pointer-events-none">
-      <div class="text-center text-white">
-        <h1 class="text-5xl font-bold">Bagus Putra Wiratama</h1>
-        <p class="mt-2 text-lg text-slate-300">Interactive 3D Portfolio</p>
-      </div>
-    </div>
+    <!-- PERUBAHAN KRITIS: Teks UI dihapus dari sini -->
   </div>
 </template>
