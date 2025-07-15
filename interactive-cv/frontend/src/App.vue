@@ -126,8 +126,9 @@ onMounted(() => {
       <!-- ❄️ Salju khusus mode terang -->
       <Snow class="hidden dark:block" />
 
-      <div class="absolute inset-0 z-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNDA4YyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNDBmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjA0MGZmIi8+PC9saW5lYXJHcmFkaWVudD48cG9seWdvbiBwb2ludHM9IjYwLDAgMTIwLDYwIDYwLDEyMCAwLDYwIiBmaWxsPSJ1cmwoI2dyYWQpIi8+PC9zdmc+')] bg-repeat bg-[length:60px_60px] animate-geo-shift,opacity-60 dark:opacity-0 block dark:hidden">
+      <div class="absolute inset-0 z-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJnIiBjeD0iNTAiIGN5PSI1MCIgcj0iNTAlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2ZWYzZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYzc5ZDgiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTAsMEw2MCwzMEw5MCw0MEw2MCw1MEw1MCw4MEw0MCw1MEwxMCw0MEw0MCwzMEw1MCwwWiIgZmlsbD0idXJsKCNnKSIvPjwvc3ZnPg==')] bg-repeat bg-[length:120px_120px] animate-geo-shift opacity-60 dark:opacity-0 block dark:hidden">
       </div>
+
 
       <!-- Galaxy background -->
       <div
