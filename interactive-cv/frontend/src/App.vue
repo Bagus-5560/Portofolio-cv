@@ -2,7 +2,6 @@
 import { onMounted, ref, onBeforeUnmount } from 'vue'
 import Snow from './components/Snow.vue'
 import HeroInteraktif from './components/HeroInteraktif.vue'
-import Snow from './components/Snow.vue'
 
 const isDarkMode = ref(false)
 
