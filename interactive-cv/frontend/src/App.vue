@@ -187,8 +187,8 @@ onMounted(() => {
 
 <style>
 .wavy-triangle-background {
-  background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23ddd' stroke-width='1'%3E%3Cpath d='M0 0L160 160'/%3E%3Cpath d='M160 0L0 160'/%3E%3Cpath d='M80 0L80 160'/%3E%3Cpath d='M0 80L160 80'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 160px 160px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='pattern' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%238b7fe3' stroke-width='1'%3E%3Cpath d='M0 0L80 80'/%3E%3Cpath d='M80 0L0 80'/%3E%3Cpath d='M40 0L40 80'/%3E%3Cpath d='M0 40L80 40'/%3E%3C/g%3E%3C/pattern%3E%3Cfilter id='wave'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.005 0.01' numOctaves='1' result='turb'%3E%3Canimate attributeName='baseFrequency' dur='20s' values='0.005 0.01;0.01 0.02;0.005 0.01' repeatCount='indefinite'/%3E%3C/feTurbulence%3E%3CfeDisplacementMap in='SourceGraphic' in2='turb' scale='6'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23pattern)' filter='url(%23wave)'/%3E%3C/svg%3E");
+  background-size: cover;
   background-repeat: repeat;
 }
 </style>
